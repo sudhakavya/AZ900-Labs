@@ -1,0 +1,18 @@
+{
+  "Name":"AZ900-Custom_Rbac.json",
+  "Id":null,
+  "IsCustom":true,
+  "Description":"Az900-Custom RBAC",
+  "Actions":[
+    "Microsoft.ClassicCompute/virtualMachines/write",
+    "Microsoft.Compute/disks/*",
+    "Microsoft.Compute/virtualMachines/extensions/*",
+    "Microsoft.Network/networkInterfaces/*",
+    "Microsoft.Network/networkSecurityGroups/*",
+    "Microsoft.Network/publicIPAddresses/*",
+    "Microsoft.Network/virtualNetworks/*",
+    "Microsoft.Network/virtualNetworks/subnets/*",
+  
+    
+
+    
