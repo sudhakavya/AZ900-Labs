@@ -6,28 +6,28 @@
           "anyOf": [
             {
               "field": "type",
-              "like": "Microsoft.Compute/disks/*"
+              "like": "Microsoft.Compute/disks"
             },
             {
               "field": "type",
-              "like": "Microsoft.Compute/virtualMachines/*"
+              "like": "Microsoft.Compute/virtualMachines"
             },
 
             {
               "field": "type",
-              "like": "Microsoft.Network/networkInterfaces/*"
+              "like": "Microsoft.Network/networkInterfaces"
             },
             {
               "field": "type",
-              "like": "Microsoft.Network/networkSecurityGroups/*"
+              "like": "Microsoft.Network/networkSecurityGroups"
             },
             {
               "field": "type",
-              "like": "Microsoft.Network/publicIPAddresses/*"
+              "like": "Microsoft.Network/publicIPAddresses"
             },
             {
               "field": "type",
-              "like": "Microsoft.Network/virtualNetworks/*"
+              "like": "Microsoft.Network/virtualNetworks"
             },
             {
               "field": "type",
