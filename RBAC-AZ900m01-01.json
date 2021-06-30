@@ -1,23 +1,30 @@
 {
-  "Name":"AZ900-Custom_Rbac.json",
-  "Id":null,
-  "IsCustom":true,
-  "Description":"Az900-Custom RBAC",
-  "Actions":[
-    "Microsoft.ClassicCompute/virtualMachines/write",
+  "Name": "AZ-900-01 RBAC",
+  "Id": null,
+  "IsCustom": true,
+  "Description": "AZ-900-01 RBAC",
+  "Actions": [
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
     "Microsoft.Compute/disks/write",
-    "Microsoft.Compute/virtualMachines/extensions/write",
+    "Microsoft.Compute/disks/read",
+    "Microsoft.Compute/virtualMachines/write",
+    "Microsoft.Compute/virtualMachines/read",
     "Microsoft.Network/networkInterfaces/write",
+    "Microsoft.Network/networkInterfaces/read",
+    "Microsoft.Network/networkInterfaces/join/action",
     "Microsoft.Network/networkSecurityGroups/write",
+    "Microsoft.Network/networkSecurityGroups/read",
+    "Microsoft.Network/networkSecurityGroups/join/action",
     "Microsoft.Network/publicIPAddresses/write",
+    "Microsoft.Network/publicIPAddresses/read",
+    "Microsoft.Network/publicIPAddresses/join/action",
+    "Microsoft.Network/virtualNetworks/subnets/join/action",
     "Microsoft.Network/virtualNetworks/write",
-    "Microsoft.Network/virtualNetworks/subnets/write",
-     ],
+    "Microsoft.Network/virtualNetworks/read"
+  ],
   "NotActions": [
-     
   ]
-}
-  
+}  
     
 
     
