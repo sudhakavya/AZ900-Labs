@@ -1,5 +1,5 @@
 {
-  "Name": "AZ-900-01 RBAC",
+  "Name": "AZ-900-01-Kavya-test-RBAC",
   "Id": null,
   "IsCustom": true,
   "Description": "AZ-900-01 RBAC",
@@ -22,7 +22,7 @@
     "Microsoft.Network/publicIPAddresses/join/action",
     "Microsoft.Network/virtualNetworks/subnets/join/action",
     "Microsoft.Network/virtualNetworks/write",
-    "Microsoft.Network/virtualNetworks/read"
+    "Microsoft.Network/virtualNetworks/read",
     "Microsoft.ClassicCompute/virtualMachines/downloadRemoteDesktopConnectionFile/action"
   ],
   "NotActions": [
