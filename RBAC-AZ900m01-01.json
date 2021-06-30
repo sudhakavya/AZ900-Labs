@@ -4,6 +4,8 @@
   "IsCustom": true,
   "Description": "AZ-900-01 RBAC",
   "Actions": [
+    "Microsoft.Resources/deployments/*",
+    "Microsoft.Resources/deployments/validate/action",
     "Microsoft.Resources/subscriptions/resourceGroups/read",
     "Microsoft.Compute/disks/write",
     "Microsoft.Compute/disks/read",
