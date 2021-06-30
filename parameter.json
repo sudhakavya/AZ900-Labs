@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "demouser"
+      "value": "azureuser"
     },
     "adminPassword": {
-      "value": "Password.1!!"
+      "value": "Pa$$w0rd1234"
     },
     "AzureUserName": {
       "value": "GET-AZUSER-UPN"
