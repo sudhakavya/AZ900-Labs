@@ -23,6 +23,7 @@
     "Microsoft.Network/virtualNetworks/subnets/join/action",
     "Microsoft.Network/virtualNetworks/write",
     "Microsoft.Network/virtualNetworks/read"
+    "Microsoft.ClassicCompute/virtualMachines/downloadRemoteDesktopConnectionFile/action"
   ],
   "NotActions": [
   ]
