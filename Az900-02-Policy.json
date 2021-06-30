@@ -1,0 +1,37 @@
+
+  "if": {
+    "anyOf": [
+      {
+        "not": {
+          "anyOf": [
+            {
+              "field": "type",
+               "like": "Microsoft.Web/serverfarms"
+            },
+            {
+               "field": "type",
+               "like": "Microsoft.ContainerInstance/containerGroups"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/sites"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/sites/hostNameBindings"
+            },
+            {
+              "field": "type",
+              "in": [ "Microsoft.Web/serverFarms", "Microsoft.Web/sites", "Microsoft.ContainerInstance/containerGroups","Microsoft.Web/sites/hostNameBindings" ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "then": {
+    "effect": "deny"
+  }
+}
+
+              
