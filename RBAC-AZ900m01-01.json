@@ -5,13 +5,18 @@
   "Description":"Az900-Custom RBAC",
   "Actions":[
     "Microsoft.ClassicCompute/virtualMachines/write",
-    "Microsoft.Compute/disks/*",
-    "Microsoft.Compute/virtualMachines/extensions/*",
-    "Microsoft.Network/networkInterfaces/*",
-    "Microsoft.Network/networkSecurityGroups/*",
-    "Microsoft.Network/publicIPAddresses/*",
-    "Microsoft.Network/virtualNetworks/*",
-    "Microsoft.Network/virtualNetworks/subnets/*",
+    "Microsoft.Compute/disks/write",
+    "Microsoft.Compute/virtualMachines/extensions/write",
+    "Microsoft.Network/networkInterfaces/write",
+    "Microsoft.Network/networkSecurityGroups/write",
+    "Microsoft.Network/publicIPAddresses/write",
+    "Microsoft.Network/virtualNetworks/write",
+    "Microsoft.Network/virtualNetworks/subnets/write",
+     ],
+  "NotActions": [
+     
+  ]
+}
   
     
 
