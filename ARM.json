@@ -61,39 +61,25 @@
     {
       "name": "[variables('winvirtualMachineName')]",
       "type": "Microsoft.Compute/virtualMachines",
-      "apiVersion": "2017-03-30",
+      "apiVersion": "2021-03-01",
       "location": "[resourceGroup().location]",
       "dependsOn": [
         "[concat('Microsoft.Network/networkInterfaces/', variables('networkInterfaceName'))]"
       ],
       "properties": {
-        "osProfile": {
-          "computerName": "[variables('winvirtualMachineName')]",
-          "adminUsername": "[parameters('adminUsername')]",
-          "adminPassword": "[parameters('adminPassword')]",
-          "windowsConfiguration": {
-            "provisionVmAgent": "true"
-          }
-        },
         "hardwareProfile": {
-          "vmSize": "Standard_D1_v2"
+          "vmSize": "Standard_B2s"
         },
         "storageProfile": {
-          "imageReference": {
-            "publisher": "MicrosoftWindowsServer",
-            "offer": "WindowsServer",
-            "sku": "2019-Datacenter",
-            "version": "latest"
-          },
           "osDisk": {
             "createOption": "fromImage",
             "managedDisk": {
-              "storageAccountType": "Standard_LRS"
+              "storageAccountType": "Premium_LRS"
             }
           },
-          "dataDisks": [
-
-          ]
+          "imageReference": {
+            "id": "/subscriptions/e2ee6274-c6e3-4df1-b3d2-79107c10f7b0/resourceGroups/cloudlab-mgmt/providers/Microsoft.Compute/galleries/ImageGallery/images/az900-definition/versions/1.0.1"
+          }
         },
         "networkProfile": {
           "networkInterfaces": [
@@ -101,6 +87,12 @@
               "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
             }
           ]
+        },
+        "licenseType": "Windows_Server",
+        "diagnosticsProfile": {
+          "bootDiagnostics": {
+            "enabled": true
+          }
         }
       },
       "resources": [
@@ -119,10 +111,10 @@
             "autoUpgradeMinorVersion": "true",
             "settings": {
               "fileUris": [
-                "https://experienceazure.blob.core.windows.net/templates/moc/az-220/scripts/psscripts01.ps1",
+                "https://experienceazure.blob.core.windows.net/templates/moc/az-900/scripts/psscripts.ps1",
                 "https://experienceazure.blob.core.windows.net/templates/cloudlabs-common/cloudlabs-windows-functions.ps1"
               ],
-              "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File moc/az-220/scripts/psscripts01.ps1', variables('cloudlabsCommon'))]"
+              "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File moc/az-900/scripts/psscripts.ps1', variables('cloudlabsCommon'))]"
             }
           }
         }
@@ -233,6 +225,10 @@
     }
   ],
   "outputs": {
+    "DeploymentID": {
+      "type": "string",
+      "value": "[parameters('DeploymentID')]"
+    },
     "VM Admin Username": {
       "type": "string",
       "value": "[parameters('adminUsername')]"
