@@ -1,0 +1,21 @@
+{
+  "Name": "AZ-90002-Kavya-test-RBAC",
+  "Id": null,
+  "IsCustom": true,
+  "Description": "AZ-900-02 RBAC",
+  "Actions": [
+    "Microsoft.Resources/deployments/*",
+    "Microsoft.Resources/deployments/validate/action",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
+    "Microsoft.Web/serverFarms/read",
+    "Microsoft.Web/serverFarms/write",
+    "Microsoft.Web/sites/read",
+    "Microsoft.Web/sites/write",
+    "Microsoft.ContainerInstance/containerGroups/read",
+    "Microsoft.ContainerInstance/containerGroups/write"
+],
+  "NotActions": [
+  ]
+}  
+    
