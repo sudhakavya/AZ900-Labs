@@ -7,8 +7,8 @@
                     "Microsoft.Authorization/*/read",
                     "Microsoft.Resources/deployments/*",
                     "Microsoft.Resources/subscriptions/resourceGroups/read",
-                    "Microsoft.Storage/storageAccounts/write",
-                    "Microsoft.Storage/storageAccounts/Read"
+                    "Microsoft.Storage/storageAccounts/*",
+                    "Microsoft.Resources/deployments/validate/action"
                 ],
     "NotActions":  [
 
