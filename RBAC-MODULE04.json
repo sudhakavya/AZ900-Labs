@@ -1,0 +1,32 @@
+{
+    "Name":  "Spektra Custom RBAC",
+    "Id":  null,
+    "IsCustom":  true,
+    "Description":  "Spektra Training Custom Role.",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Compute/disks/Write",
+                    "Microsoft.Compute/disks/Read",
+                    "Microsoft.Compute/virtualMachines/Write",
+                    "Microsoft.Compute/virtualMachines/Read",
+                    "Microsoft.Network/networkInterfaces/Write",
+                    "Microsoft.Network/networkInterfaces/Read",
+                    "Microsoft.Network/networkSecurityGroups/Write",
+                    "Microsoft.Network/networkSecurityGroups/Read",
+                    "Microsoft.Network/publicIPAddresses/Write",
+                    "Microsoft.Network/publicIPAddresses/Read",
+                    "Microsoft.Network/virtualNetworks/Write",
+                    "Microsoft.Network/virtualNetworks/Read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Network/publicIPAddresses/join/action",
+                    "Microsoft.Resources/deployments/validate/action",
+                    "Microsoft.Network/networkInterfaces/join/action",
+                    "Microsoft.Network/networkSecurityGroups/join/action",
+                    "Microsoft.Network/virtualNetworks/subnets/join/action",
+                    "Microsoft.ClassicCompute/virtualMachines/downloadRemoteDesktopConnectionFile/action",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read"
+                ],
+    "NotActions":  [
+
+                   ]
+}
