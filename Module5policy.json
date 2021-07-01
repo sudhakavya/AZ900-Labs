@@ -6,7 +6,7 @@
 			  "anyOf": [
                     {
 				    "field": "type",
-				    "like": "Microsoft.Storage/storageAccounts/*"
+				    "like": "Microsoft.Storage/storageAccounts"
 				    },
                     {
 				    "field": "type",
